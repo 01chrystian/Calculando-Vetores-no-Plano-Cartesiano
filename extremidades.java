@@ -25,50 +25,45 @@ public class extremidades {
 				
 		System.out.println("Calculando Vetores no Plano Cartesiano" + "\n");
 		System.out.println("Digite uma extremidade da esquerda da reta X. EX: -5: ");
-	    extrEsquerda = sc.nextInt();
+	        extrEsquerda = sc.nextInt();
 	    
-	    while (extrEsquerda > 0) {
+	        while (extrEsquerda > 0) {
 	    	System.out.println("ATENCAO: Somente numeros negativos com a inclusao do sinal de menos (-). EX: -3: "+ "\n");
 	    	System.out.println("_______________________________________________________");
 	    	System.out.println("Digite novamente uma extremidade da esquerda da reta X: ");
-		    extrEsquerda = sc.nextInt();
-	    }
+		extrEsquerda = sc.nextInt();
+	        }
 	    
 	    
-	    System.out.println("Digite uma extremidade da direita da reta X. EX: 5: ");
+	        System.out.println("Digite uma extremidade da direita da reta X. EX: 5: ");
 		extrDireita =sc.nextInt();
 		
 		while (extrDireita < 0) {
 	    	System.out.println("ATENCAO: Somente numeros positivos, com excecao do sinal de mais (+). EX: 3: " + "\n");
 	    	System.out.println("______________________________________________________");
 	    	System.out.println("Digite novamente uma extremidade da direita da reta X: ");
-		    extrDireita = sc.nextInt();
-	    }
+		extrDireita = sc.nextInt();
+	        }
 	    
-		System.out.println( "Gráficamente:");
+		System.out.println( "GrÃ¡ficamente:");
 		
 		for(e = 0  ; e >= extrEsquerda; e--) {
-			int valorRetaE = ((e - extrEsquerda) * (-1));
+	        int valorRetaE = ((e - extrEsquerda) * (-1));
 	    	System.out.print(" ("  + valorRetaE + ")" );
-	    
-	    
-	    }
+	        }
 		for(d = 1 ; d <= extrDireita; d++) {
-			int valorRetaD = d;
+		int valorRetaD = d;
 	    	System.out.print(" (" + valorRetaD + ")");
-	    
-	    }
+	        }
 		
 		System.out.println(" -----> (X)" + "\n");
-		
-		
 		
 		System.out.println("Digite uma extremidade de cima da reta y. EX: 4: ");
 		extrDeCima = sc.nextInt();
 		
 		while (extrDeCima < 0) {
-			System.out.println("ATENCAO: Somente numeros positivos, com excecao do sinal de mais (+). EX: 3: "+ "\n");
-			System.out.println("___________________________________________________");
+	        System.out.println("ATENCAO: Somente numeros positivos, com excecao do sinal de mais (+). EX: 3: "+ "\n");
+		System.out.println("___________________________________________________");
 	    	System.out.println("Digite novamente uma extremidade de cima da reta y: ");
 	    	extrDeCima = sc.nextInt();
 			
@@ -82,54 +77,44 @@ public class extremidades {
 	    	System.out.println("____________________________________________________");
 	    	System.out.println("Digite novamente uma extremidade de baixo da reta y: ");
 	    	extrDeBaixo = sc.nextInt();
-	    }
+	        }
 	    
-		System.out.println( "Gráficamente:");
+		System.out.println( "GrÃ¡ficamente:");
 		System.out.println("\n" + "(Y)");
 	
 		for(c = 0 ; c < extrDeCima; c++) {
-			int valorRetaC = (c-extrDeCima) * (-1);
-	    System.out.print( "\n"+ "("  + valorRetaC + ")" +"\n");
+		int valorRetaC = (c-extrDeCima) * (-1);
+	        System.out.print( "\n"+ "("  + valorRetaC + ")" +"\n");
+	        }
 	    
-		}
-	    
-	    for(b = 0; b >= extrDeBaixo; b-- ) {
+	        for(b = 0; b >= extrDeBaixo; b-- ) {
 	    	int valorRetaB = ((b+extrDeBaixo) - (extrDeBaixo));
 	    	System.out.print("\n"+ "("  + valorRetaB + ")" +"\n");
-	    }
+	        }
 	    
 	    
 	    	
-	    System.out.println("\n" + "Para que possa achar o vetor das coordenadas, ache duas coordenadas: " + "\n");
+	        System.out.println("\n" + "Para que possa achar o vetor das coordenadas, ache duas coordenadas: " + "\n");
 	    
-	    System.out.println("1ª coordenada chamaremos de (A)" + "\n");
-	    System.out.println("Escolha um valor que está na reta X: ");
-	     valor1 = sc.nextInt();
-	    System.out.println("Escolha um valor que está na reta y: ");
-	      valor3 = sc.nextInt();
-	    
-	   
-	    System.out.println("A coordenada de (A) é: " + "(" + valor1 + ";" + valor3 + ")" + "\n");
-	    
-	    System.out.println("2ª coordenada chamaremos de (B)" + "\n");
-	    
-	    System.out.println("Escolha um valor que está na reta X: ");
-	     valor2 = sc.nextInt();
-	    System.out.println("Escolha um valor que está na reta y: ");
-	      valor4 = sc.nextInt();
+	        System.out.println("1Âª coordenada chamaremos de (A)" + "\n");
+	        System.out.println("Escolha um valor que estÃ¡ na reta X: ");
+	        valor1 = sc.nextInt();
+	        System.out.println("Escolha um valor que estÃ¡ na reta y: ");
+	        valor3 = sc.nextInt();
 	    
 	   
-	    System.out.println("A coordenada de (B) é: " + "(" + valor2 + ";" + valor4 + ")" + "\n");
-	    
-	    
-	    System.out.println("O vetor entre A até a extremidade de B é: " + "(" +(valor1-valor2) + ";" + (valor3-valor4) + ")" );
-	    
-	    
-	    
-	    System.out.println("(A)----------" + "(" + (valor1-valor2) + ";" + (valor3-valor4) + ")" + "---------->(B)");
+	        System.out.println("A coordenada de (A) Ã©: " + "(" + valor1 + ";" + valor3 + ")" + "\n");
+	       
+	        System.out.println("2Âª coordenada chamaremos de (B)" + "\n");
+	        System.out.println("Escolha um valor que estÃ¡ na reta X: ");
+	        valor2 = sc.nextInt();
+	        System.out.println("Escolha um valor que estÃ¡ na reta y: ");
+	        valor4 = sc.nextInt();
+	       
+		System.out.println("A coordenada de (B) Ã©: " + "(" + valor2 + ";" + valor4 + ")" + "\n");
+	        System.out.println("O vetor entre A atÃ© a extremidade de B Ã©: " + "(" +(valor1-valor2) + ";" + (valor3-valor4) + ")" );
+	        System.out.println("(A)----------" + "(" + (valor1-valor2) + ";" + (valor3-valor4) + ")" + "---------->(B)");
 		
-			
-
 	}
 
 }
